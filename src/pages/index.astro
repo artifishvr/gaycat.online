@@ -1,11 +1,87 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { ArrowRight } from "lucide-astro";
+import { cats } from "../cats";
+
+const randomizedCats = cats.sort(() => Math.random() - 0.5);
+const randomCat = cats[Math.floor(Math.random() * cats.length)];
 ---
 
 <Layout>
-  <p>Coming soon</p>
-  <p>
-    Domain management @ <a href="https://app.gaycat.online">app.gaycat.online</a
+  <div class="w-full text-center mt-6 mb-4">
+    looking for gaycat.online domains? <a
+      href="https://app.gaycat.online"
+      target="_blank"
+      class="underline text-blue-300">app.gaycat.online</a
     >
-  </p>
+  </div>
+  <div class="text-center flex flex-col items-center justify-center mt-6">
+    <img
+      src={randomCat.image}
+      alt={randomCat.name}
+      class="rounded-full w-48 h-48 object-cover"
+    />
+    <h1 class="text-6xl font-bold pb-2">{randomCat.name}</h1>
+    <h2 class="text-sm text-zinc-300">randomly chosen</h2>
+    <div class="flex items-center justify-center gap-2 mt-4 flex-col">
+      <a
+        class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 bg-white text-black hover:bg-white/90 h-10 px-4 py-2"
+        href={randomCat.link}
+      >
+        Go <ArrowRight class="ml-2 h-4 w-4" />
+      </a>
+    </div>
+  </div>
+  <div class="p-5 bg-zinc-900 m-4 rounded-lg">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+    >
+      {
+        randomizedCats.map((cat) => (
+          <div class="bg-zinc-800 rounded-lg p-4 flex flex-col items-center justify-center shadow-xl">
+            <a href={cat.link}>
+              <img
+                src={cat.image}
+                alt={cat.name + "'s profile picture"}
+                class="rounded-full w-24 h-24 object-cover"
+              />
+            </a>
+            <h3 class="text-md text-white font-semibold">{cat.name}</h3>
+            <a href={cat.link} target="_blank">
+              <p class="text-sm text-white/50 underline text-center">
+                {cat.link}
+              </p>
+            </a>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="text-sm text-zinc-300 mt-4 mb-2 text-center">
+    <p>
+      Curated list of "gay cats" (you don't have to identify as gay or a cat to
+      be on this list)
+    </p>
+
+    <p>
+      Open source & editable at <a
+        href="https://github.com/artifishvr/gaycat.online"
+        target="_blank"
+        class="underline text-blue-300">github.com/artifishvr/gaycat.online</a
+      >
+    </p>
+
+    <p class="mb-4">
+      with ❤️ by <a
+        href="https://arti.gay"
+        target="_blank"
+        class="text-blue-300 underline">arti</a
+      >
+    </p>
+
+    <p>
+      This site is not to be used as a vector for harrassment or hate speech.
+    </p>
+  </div>
 </Layout>
