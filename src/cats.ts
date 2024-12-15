@@ -30,12 +30,12 @@ export const cats: Cat[] = [
       "https://pbs.twimg.com/profile_images/1580921278483103745/DXZO9xUL_400x400.png",
     link: "https://fizzyapple12.com",
   },
-  // {
-  //   name: "Yuki",
-  //   image:
-  //     "https://cdn.bsky.app/img/avatar/plain/did:plc:b4s73u5sykkce3gsxykyunyu/bafkreigagoqf5hzziemm5ldnkancf4yqs7qpt5dcijvlsbjctdlkdxmewi@jpeg",
-  //   link: "https://bsky.app/profile/yuki-vr.bsky.social",
-  // },
+  {
+    name: "Yuki",
+    image:
+      "https://cdn.bsky.app/img/avatar/plain/did:plc:b4s73u5sykkce3gsxykyunyu/bafkreigagoqf5hzziemm5ldnkancf4yqs7qpt5dcijvlsbjctdlkdxmewi@jpeg",
+    link: "https://bsky.app/profile/yuki-vr.bsky.social",
+  },
   // {
   //   name: "Col The Furret",
   //   image:
@@ -55,11 +55,6 @@ export const cats: Cat[] = [
   //   link: "https://twitter.com/MunchkinRin",
   // },
   // {
-  //   name: "ShooyanMe",
-  //   image:
-  //     "https://pbs.twimg.com/profile_images/1865115847125037056/w8XUENBN_400x400.jpg",
-  //   link: "https://linktr.ee/shooyanme",
-  // },
   {
     name: "CosmicLazers",
     image:
@@ -84,18 +79,6 @@ export const cats: Cat[] = [
       "https://pbs.twimg.com/profile_images/1742848377468162048/mwAvLXaM_400x400.jpg",
     link: "https://www.twitch.tv/lumiichu",
   },
-  // {
-  //   name: "Cat Goddess, Josefina",
-  //   image:
-  //     "https://pbs.twimg.com/profile_images/1800731431179571200/cRSIIrgk_400x400.jpg",
-  //   link: "https://linktr.ee/qsksw",
-  // },
-  // {
-  //   name: "Smollest Kev",
-  //   image:
-  //     "https://cdn.bsky.app/img/avatar/plain/did:plc:wues3jpxzlh5nmjbug5ccvml/bafkreigwjnwsq6kvi5batgqd7nsidzg6co2p4wtsjebqx4usu6uj6iuw7a@jpeg",
-  //   link: "https://linktr.ee/smollestkev",
-  // },
   {
     name: "Arti",
     image: "https://arti.gay/images/pfp.webp",
