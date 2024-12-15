@@ -67,12 +67,12 @@ export const cats: Cat[] = [
   //     "https://pbs.twimg.com/profile_images/1805742073552715776/jJbAmx6u_400x400.jpg",
   //   link: "https://twitter.com/vansdayo/status/1523101721933021184",
   // },
-  // {
-  //   name: "RoseyNekoha",
-  //   image:
-  //     "https://pbs.twimg.com/profile_images/1832936772977782784/wFFPsh_6_400x400.jpg",
-  //   link: "https://roseynekoha.carrd.co/",
-  // },
+  {
+    name: "RoseyNekoha",
+    image:
+      "https://pbs.twimg.com/profile_images/1832936772977782784/wFFPsh_6_400x400.jpg",
+    link: "https://roseynekoha.carrd.co/",
+  },
   {
     name: "Lumiichu",
     image:
