@@ -73,6 +73,18 @@ export const cats: Cat[] = [
     link: "https://www.twitch.tv/lumiichu",
   },
   {
+    name: "catdog",
+    image:
+      "https://cdn.bsky.app/img/avatar/plain/did:plc:uz5vm4u4jrznqzzff75xq7gh/bafkreihswmllwibkknjh4rvegh6airupqtxsgyjfejotyjpm4y5tixthr4@jpeg",
+    link: "https://bsky.app/profile/cat.dogst.ink",
+  },
+  {
+    name: "PupCakez",
+    image:
+      "https://static-cdn.jtvnw.net/jtv_user_pictures/e91123d7-cd4a-4e52-8dbe-95a65b5a4f8e-profile_image-70x70.png",
+    link: "https://www.twitch.tv/pupcxkez/",
+  },
+  {
     name: "Arti",
     image: "https://arti.gay/images/pfp.webp",
     link: "https://arti.gay/",
