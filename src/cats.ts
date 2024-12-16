@@ -85,6 +85,12 @@ export const cats: Cat[] = [
     link: "https://www.twitch.tv/pupcxkez/",
   },
   {
+    name: "RinMunchkin",
+    image:
+      "https://pbs.twimg.com/profile_images/1850202309961412608/A9WCxczR_400x400.jpg",
+    link: "https://twitter.com/MunchkinRin",
+  },
+  {
     name: "Arti",
     image: "https://arti.gay/images/pfp.webp",
     link: "https://arti.gay/",
