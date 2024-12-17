@@ -1,7 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { ArrowRight } from "lucide-astro";
-import { cats } from "../cats";
+import directus from "../directus";
+import { readItems } from "@directus/sdk";
+import { DIRECTUS_URL } from "astro:env/client";
+
+let cats = await directus.request(readItems("gay_cats"));
 
 const randomizedCats = cats.sort(() => Math.random() - 0.5);
 const randomCat = cats[Math.floor(Math.random() * cats.length)];
@@ -17,7 +21,7 @@ const randomCat = cats[Math.floor(Math.random() * cats.length)];
   </div>
   <div class="text-center flex flex-col items-center justify-center mt-6">
     <img
-      src={randomCat.image}
+      src={`${DIRECTUS_URL}/assets/${randomCat.icon}?download&fit=cover&width=512&height=512&quality=60&format=webp`}
       alt={randomCat.name}
       class="rounded-full w-48 h-48 object-cover"
     />
@@ -40,9 +44,10 @@ const randomCat = cats[Math.floor(Math.random() * cats.length)];
         randomizedCats.map((cat) => (
           <div class="bg-zinc-800 rounded-lg p-4 flex flex-col items-center justify-center shadow-xl">
             <img
-              src={cat.image}
+              src={`${DIRECTUS_URL}/assets/${cat.icon}?download&fit=cover&width=256&height=256&quality=60&format=webp`}
               alt={cat.name + "'s profile picture"}
               class="rounded-full w-24 h-24 object-cover"
+              loading="lazy"
             />
             <h3 class="text-md text-white font-semibold">{cat.name}</h3>
             <a href={cat.link} target="_blank">
