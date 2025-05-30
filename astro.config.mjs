@@ -9,17 +9,7 @@ import cloudflare from "@astrojs/cloudflare";
 export default defineConfig({
   integrations: [tailwind()],
   output: "server",
-  adapter: cloudflare(),
-  env: {
-    schema: {
-      DIRECTUS_URL: envField.string({
-        context: "client",
-        access: "public",
-      }),
-      DIRECTUS_TOKEN: envField.string({
-        context: "server",
-        access: "secret",
-      }),
-    },
-  },
+  adapter: cloudflare({
+    imageService: "compile",
+  }),
 });
