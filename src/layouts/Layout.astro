@@ -1,28 +1,30 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-    <meta name="generator" content={Astro.generator} />
-    <title>gay cats</title>
-  </head>
-  <body class="bg-zinc-950 text-white">
-    <slot />
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+        <meta name="generator" content={Astro.generator} />
+        <title>gay cats</title>
+    </head>
+    <body class="bg-zinc-950 text-white">
+        <slot />
+    </body>
 </html>
 
 <script
-  is:inline
-  defer
-  data-domain="gaycat.online"
-  src="https://a.arti.lol/js/script.outbound-links.js"></script>
+    is:inline
+    defer
+    data-domain="gaycat.online"
+    src="https://a.arti.lol/js/script.outbound-links.js"></script>
 
 <script>
-  import "@fontsource-variable/dm-sans";
+    import "@fontsource-variable/dm-sans";
 </script>
 <style is:global>
-  body {
-    font-family: "DM Sans Variable", sans-serif;
-  }
+    @import "tailwindcss";
+
+    body {
+        font-family: "DM Sans Variable", sans-serif;
+    }
 </style>
