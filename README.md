@@ -1,5 +1,8 @@
 # gaycat.online
 
+> [!WARNING]  
+> This website is now archived, with the domain expiring, as its one of my more expensive domains, with the least use. Thanks for all the gay! If anyone wants to take over before March 13th, 2026, please contact me!
+
 ## Updating the list
 
 ### GitHub Pull Requests
